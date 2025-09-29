@@ -4,14 +4,15 @@
   "description": "projetoAlmoxerifadoAutomobilistico",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "postinstall": "prisma generate"
+    "dev": "npx nodemon server.js",
+    "postinstall": "prisma migrate dev --name init && prisma generate"
   },
   "author": "GabrielBZanon",
   "license": "ISC",
   "keywords": [],
   "dependencies": {
     "@prisma/client": "^6.14.0",
+    "bcrypt": "^6.0.0",
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",

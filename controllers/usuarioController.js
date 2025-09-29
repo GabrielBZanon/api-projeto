@@ -98,7 +98,19 @@ const login = async (req, res) => {
   }
 };
 
+const listarUsuarios = async (req, res) => {
+  try {
+    const usuarios = await prisma.usuario.findMany({});
+    const usuariosSemSenha = usuarios.map(({ senha, ...usuario }) => usuario);
+    return res.json(usuariosSemSenha);
+  } catch (error) {
+    console.error('Erro ao listar usuários:', error);
+    return res.status(500).json({ erro: 'Erro interno no servidor' });
+  }
+};
+
 module.exports = {
   cadastrarUsuario,
+  listarUsuarios,
   login
 };

@@ -15,9 +15,9 @@ app.use(cors({
 app.use(express.json());
 
 const routes = require('./routes/routes');
-app.use('/api', routes);
+app.use('/', routes);
 
-app.get('/api/health', async (req, res) => {
+app.get('/health', async (req, res) => {
   try {
     await prisma.$queryRaw`SELECT 1`;
     res.json({ 

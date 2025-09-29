@@ -1,7 +1,17 @@
 {
+  "name": "api",
+  "version": "1.0.0",
+  "description": "projetoAlmoxerifadoAutomobilistico",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "postinstall": "prisma generate"
+  },
+  "author": "GabrielBZanon",
+  "license": "ISC",
+  "keywords": [],
   "dependencies": {
     "@prisma/client": "^6.14.0",
-    "bcrypt": "^6.0.0",
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
@@ -9,15 +19,10 @@
     "jsonwebtoken": "^9.0.2",
     "mysql": "^2.18.1"
   },
-  "name": "api",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+  "devDependencies": {
+    "prisma": "^6.16.2"
   },
-  "keywords": [],
-  "author": "GabrielBZanon",
-  "license": "ISC",
-  "description": "projetoAlmoxerifadoAutomobilistico"
+  "engines": {
+    "node": "20.x"
+  }
 }

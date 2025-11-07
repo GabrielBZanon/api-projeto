@@ -65,7 +65,7 @@ const login = async (req, res) => {
 
     if (!usuario) {
       return res.status(401).json({
-        erro: 'Email ou senha inválidos'
+        erro: 'Email não encontrado'
       });
     }
 
@@ -73,7 +73,7 @@ const login = async (req, res) => {
 
     if (!senhaValida) {
       return res.status(401).json({
-        erro: 'Email ou senha inválidos'
+        erro: 'Senha inválida'
       });
     }
 

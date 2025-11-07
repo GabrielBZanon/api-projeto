@@ -37,6 +37,7 @@ model Movimentacao {
   tipo       String
   quantidade Int
   data       DateTime @default(now())
+  observacoes String?
   produto    Produto  @relation(fields: [produtoId], references: [id])
   produtoId  Int
 }

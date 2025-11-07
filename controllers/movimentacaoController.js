@@ -10,11 +10,7 @@ const create = async (req, res) => {
 
   try {
     const movimentacao = await prisma.movimentacao.create({
-      data: {
-        tipo,
-        quantidade,
-        produtoId,
-      },
+      data: req.body,
     });
     return res.status(201).json(movimentacao);
   } catch (error) {

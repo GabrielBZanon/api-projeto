@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors({ 
-  origin: ['http://127.0.0.1:5500', 'https://gabrielbzanon.github.io/web-projeto'],
+  origin: ['http://127.0.0.1:5500', 'https://gabrielbzanon.github.io'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));

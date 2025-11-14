@@ -35,3 +35,25 @@ datasource db {
 ```bash
 npx prisma migrate dev --name init
 ```
+## Autores
+
+| Nome | Função |
+| ---- | ------ |
+| **Gabriel B. Zanon** | Desenvolvedor Full-Stack |
+| **Lucas G. Giachetto** | Desenvolvedor Front-End|
+| **Lucas M. Colombo** | Desenvolvedor Back-End |
+| **Marcos V. Oliveira** | Engenheiro de Qualidade |
+| **Kauê H. C. Fidellis** | Product Owner / Scrum Master |
+
+---
+
+## 📄 Licença
+Projeto acadêmico – uso livre para fins de estudo. Credite os autores ao reutilizar.
+
+---
+
+<div align="center">
+
+**Smart Supply** © 2025 &nbsp;·&nbsp; Todos os direitos reservados
+
+</div>

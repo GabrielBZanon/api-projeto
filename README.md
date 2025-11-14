@@ -47,7 +47,7 @@ npx prisma migrate dev --name init
 
 ---
 
-## 📄 Licença
+## Licença
 Projeto acadêmico – uso livre para fins de estudo. Credite os autores ao reutilizar.
 
 ---
